@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVAZ Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AVAZ Bank</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="overlay">
+            <h2>Secure & Trusted Banking</h2>
+            <p>We help you manage your money safely and easily.</p>
+            <a href="#contact" class="btn">Open an Account</a>
+        </div>
+    </section>
+    
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>AVAZ Bank is dedicated to providing safe and simple banking solutions. We value trust, security, and customer satisfaction.</p>
+    </section>
+    
+    <section id="services" class="content">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Personal & Business Accounts</li>
+            <li>Fast & Secure Transactions</li>
+            <li>24/7 Customer Support</li>
+        </ul>
+    </section>
+    
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>Email: support@avazbank.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 AVAZ Bank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        background: #111;
+        text-align: center;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    h1 {
+        font-family: 'Playfair Display', serif;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+    nav li {
+        margin: 0 15px;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .hero {
+        background: url('./img/imagecompany.png') no-repeat center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 50px;
+        border-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: gold;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background: darkgoldenrod;
+    }
+    .content {
+        padding: 50px 20px;
+        max-width: 800px;
+        margin: auto;
+    }
+    footer {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+    }
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
+        nav li {
+            margin: 10px 0;
+        }
+        .hero {
+            height: 80vh;
+        }
+    }
+</style>
